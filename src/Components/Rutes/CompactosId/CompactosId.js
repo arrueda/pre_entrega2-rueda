@@ -3,7 +3,7 @@ import { useParams } from "react-router-dom";
 
 const CompactosId = () =>{
   const { id } = useParams();
-  const [personaje, setPersonaje] = useState();
+  const [personaje, setPersonaje] = useState({});
 
   useEffect(() => {
     fetch(`https://rickandmortyapi.com/api/character/${id}`)
